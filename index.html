@@ -4,6 +4,7 @@
     <title>Test Page: Don't Panic</title>
     <meta charset="utf-8">
     <style type="text/css">
+
      /*BACKGROUND STYLE */
      html{
       background: rgba(150, 150, 150, 0.2
@@ -12,12 +13,33 @@
 
      /* GLOBAL STYLES */
       a {
-        color: #872FD4;
+        color:#78B926
+      }
+
+      /* reset the default styles */
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 7vw;
+        margin-top: 0;
+      }
+
+      /* HERO STYLES */
+      .full-hero {
+        background-color: #78B926;
+        height: 25vh;
+        width: 75vw;
       }
 
       /* SOCIAL STYLES */
       .social-link {
-        color: rgba(2, 127, 255, 0.5);
+        background: rgba(2, 127, 255, 0.5);
+        color: blue;
+        display: inline-block;
+        height: 36px;
+        width: 36px;
       }
       h2 {
         font-size: 30px
@@ -25,39 +47,47 @@
 
       /* BIO STYLES */
       .bio-wrapper {
-        
+        font-size: 24px;
       }
       .bio-box {
         border: 1px solid black;
-        width: 50%;
-        margin: 10%;
-        font-size: 150%;
+        width: 75%;
+        font-size: 1rem;
+      }
+      .bio-box h3 {
+        font-size: 1.5em
+      }
+      .bio-copy {
+        font-size: 1em;
       }
       .bio-copy a {
         color: green;
-        font-size: 150%;
       }
     </style>
   </head>
   <body>
-    <h1 class="social-link">I'm an h1</h1>
-    <ul>
-      <li">
-        <a href="http://example.com/" class="social-link">Link</a>
-      </li>
-      <li>
-        <a href="http://example.com/" class="social-link">Link</a>
-      </li>
-      <li>
-        <a href="http://example.com/" class="social-link">Link</a>
-      </li>
-    </ul>
+    <div class="full-hero hero-home">
+    <h1>I'm an h1</h1>
+        <ul>
+          <li>
+            <a href="http://example.com/" class="social-link">Link</a>
+          </li>
+          <li>
+            <a href="http://example.com/" class="social-link">Link</a>
+          </li>
+          <li>
+            <a href="http://example.com/" class="social-link">Link</a>
+          </li>
+        </ul>
+    </div>
     <h2>I'm an h2</h2>
     <div class="bio-wrapper">
-    <div class="bio-box">
-      <h3>Michael Hartl</h3>
-      <a href="http://twitter.com/mhartl" class="social-link">Here</a>
-      <div class="bio-copy">
+  <div class="bio-box">
+    <h3>Michael Hartl</h3>
+    <a href="http://twitter.com/mhartl" class="social-link">
+      here
+    </a>
+    <div class="bio-copy">
       <p>
         Known for his dazzling charm, rapier wit, and unrivaled humility,
         Michael is the creator of the
@@ -71,23 +101,28 @@
         Manifesto</em></a>, but rumors that he's secretly a supervillain
         are slightly exaggerated.
       </p>
-      <
     </div>
   </div>
-    <div class="bio-box">
-      <h3>Lee Donahoe</h3>
-      <a href="https://twitter.com/leedonahoe" class="social-link">Here</a>
+  <div class="bio-box">
+    <h3>Lee Donahoe</h3>
+    <a href="https://twitter.com/leedonahoe" class="social-link">
+      here
+    </a>
+    <div class="bio-copy">
       <p>
         When he's not literally swimming with sharks or hunting powder stashes on
         his snowboard, you can find Lee in front of his computer designing
-        interfaces, doing front-end development, or writing some of the
-        interface-related Learn Enough tutorials.
+        interfaces, doing front-end development, or writing some of the interface
+        -related Learn Enough tutorials.
       </p>
     </div>
   </div>
-    <div class="bio-box">
-      <h3>Nick Merwin</h3>
-      <a href="https://twitter.com/nickmerwin" class="social-link">Here</a>
+  <div class="bio-box">
+    <h3>Nick Merwin</h3>
+    <a href="https://twitter.com/nickmerwin" class="social-link">
+      here
+    </a>
+    <div class="bio-copy">
       <p>
         You may have seen him shredding guitar live with Capital Cities on Jimmy
         Kimmel, Conan, or The Ellen Show, but rest assured Nick is a true nerd at
@@ -96,14 +131,14 @@
       </p>
     </div>
   </div>
-    <div class="bio-box">
-      <h3>??</h3>
-      <div class="bio-copy">
+  <div class="bio-box">
+    <h3>??</h3>
+    <div class="bio-copy">
       <p>
         The Future
       </p>
     </div>
-    </div>
-    </div>
+  </div>
+</div>
   </body>
 </html>
